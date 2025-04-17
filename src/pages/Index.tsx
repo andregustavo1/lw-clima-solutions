@@ -10,6 +10,7 @@ import AboutSection from '../components/AboutSection';
 import WhyChooseSection from '../components/WhyChooseSection';
 import ServicesSection from '../components/ServicesSection';
 import ClientsSection from '../components/ClientsSection';
+import GallerySection from '../components/GallerySection';
 import ProcessSection from '../components/ProcessSection';
 import ContactSection from '../components/ContactSection';
 import FinalCTA from '../components/FinalCTA';
@@ -32,6 +33,7 @@ const Index = () => {
       <WhyChooseSection />
       <ServicesSection />
       <ClientsSection />
+      <GallerySection />
       <ProcessSection />
       <ContactSection />
       <FinalCTA />

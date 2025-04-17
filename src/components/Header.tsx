@@ -1,42 +1,19 @@
 
-import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   const whatsappLink = "https://wa.me/5521998061649";
 
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-white/80 backdrop-blur-md shadow-md' 
-          : 'bg-transparent'
-      }`}
-    >
+    <header className="fixed top-0 w-full z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-xl font-poppins font-bold text-lw-blue">
-              LW Refrigeração e Climatização
-            </h1>
+            <img 
+              src="/lovable-uploads/e23d8680-ed13-474c-aff4-891c62fa4b20.png" 
+              alt="LW Refrigeração" 
+              className="h-12"
+            />
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -46,7 +23,7 @@ const Header = () => {
               smooth={true} 
               offset={-80} 
               duration={500} 
-              className="font-inter text-lw-gray hover:text-lw-blue transition-colors cursor-pointer"
+              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
             >
               Início
             </Link>
@@ -56,7 +33,7 @@ const Header = () => {
               smooth={true} 
               offset={-80} 
               duration={500} 
-              className="font-inter text-lw-gray hover:text-lw-blue transition-colors cursor-pointer"
+              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
             >
               Sobre
             </Link>
@@ -66,7 +43,7 @@ const Header = () => {
               smooth={true} 
               offset={-80} 
               duration={500} 
-              className="font-inter text-lw-gray hover:text-lw-blue transition-colors cursor-pointer"
+              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
             >
               Serviços
             </Link>
@@ -76,7 +53,7 @@ const Header = () => {
               smooth={true} 
               offset={-80} 
               duration={500} 
-              className="font-inter text-lw-gray hover:text-lw-blue transition-colors cursor-pointer"
+              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
             >
               Clientes
             </Link>
@@ -86,7 +63,7 @@ const Header = () => {
               smooth={true} 
               offset={-80} 
               duration={500} 
-              className="font-inter text-lw-gray hover:text-lw-blue transition-colors cursor-pointer"
+              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
             >
               Contato
             </Link>
@@ -101,16 +78,6 @@ const Header = () => {
             </a>
           </nav>
         </div>
-      </div>
-      
-      <div className="h-1 w-full bg-gray-100 sticky top-0">
-        <div 
-          className="h-full bg-lw-blue" 
-          style={{ 
-            width: `${Math.min((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100, 100)}%`,
-            transition: 'width 0.2s ease-out'
-          }}
-        />
       </div>
     </header>
   );
