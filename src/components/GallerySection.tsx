@@ -11,21 +11,57 @@ import {
 const GallerySection = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-      alt: "Ambiente climatizado",
+      url: "/lovable-uploads/16ccc246-322b-4dbd-aebb-7570cf3ea026.png",
+      alt: "Técnico instalando ar condicionado",
     },
     {
-      url: "https://images.unsplash.com/photo-1500673922987-e212871fec22",
-      alt: "Sistema de refrigeração",
+      url: "/lovable-uploads/6313853e-3f44-4303-8db8-8cb339072f8e.png",
+      alt: "Fachada do prédio com ar condicionados",
     },
     {
-      url: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
-      alt: "Instalação de ar condicionado",
+      url: "/lovable-uploads/839bec5d-f0a1-4b67-bd40-fea121d49004.png",
+      alt: "Técnicos trabalhando na fachada",
     },
     {
-      url: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05",
-      alt: "Manutenção preventiva",
+      url: "/lovable-uploads/d4fe054b-b0eb-4862-aa44-4612f2da2576.png",
+      alt: "Vista completa do prédio",
     },
+    {
+      url: "/lovable-uploads/5454a3bb-6f91-498e-a60f-48e1e5aa28d9.png",
+      alt: "Instalação de dutos",
+    },
+    {
+      url: "/lovable-uploads/71f07bec-8103-43db-a839-b68ca1e411cb.png",
+      alt: "Técnico configurando equipamento",
+    },
+    {
+      url: "/lovable-uploads/865f6f88-e491-468a-99d0-849d4112e384.png",
+      alt: "Instalação de equipamento no teto",
+    },
+    {
+      url: "/lovable-uploads/71501277-a01a-4298-b117-66839f6d18a3.png",
+      alt: "Técnico realizando manutenção",
+    },
+    {
+      url: "/lovable-uploads/53daed10-1fd8-4142-83e5-7445b56fce9a.png",
+      alt: "Técnico analisando equipamento Samsung",
+    },
+    {
+      url: "/lovable-uploads/3e7ae2f3-dc2e-4ecc-bf5e-62dbb47497b5.png",
+      alt: "Técnico verificando ar condicionado",
+    },
+    {
+      url: "/lovable-uploads/09fe9aab-dded-4c6f-b209-99997f14c9a0.png",
+      alt: "Fachada da loja LW Refrigeração",
+    },
+    {
+      url: "/lovable-uploads/f522a2d9-5381-4d84-9763-7ef959c92498.png",
+      alt: "Ar condicionado Samsung instalado",
+    },
+    {
+      url: "/lovable-uploads/fb03600d-c8e0-48c4-847b-e719a6d88964.png",
+      alt: "Instalação de infraestrutura",
+    }
   ];
 
   return (
