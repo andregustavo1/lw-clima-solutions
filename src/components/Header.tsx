@@ -16,63 +16,65 @@ const Header = () => {
             />
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link 
-              to="inicio" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500} 
-              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
-            >
-              Início
-            </Link>
-            <Link 
-              to="sobre" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500} 
-              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
-            >
-              Sobre
-            </Link>
-            <Link 
-              to="servicos" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500} 
-              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
-            >
-              Serviços
-            </Link>
-            <Link 
-              to="clientes" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500} 
-              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
-            >
-              Clientes
-            </Link>
-            <Link 
-              to="contato" 
-              spy={true} 
-              smooth={true} 
-              offset={-80} 
-              duration={500} 
-              className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
-            >
-              Contato
-            </Link>
+          <nav className="flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8">
+              <Link 
+                to="inicio" 
+                spy={true} 
+                smooth={true} 
+                offset={-80} 
+                duration={500} 
+                className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
+              >
+                Início
+              </Link>
+              <Link 
+                to="sobre" 
+                spy={true} 
+                smooth={true} 
+                offset={-80} 
+                duration={500} 
+                className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
+              >
+                Sobre
+              </Link>
+              <Link 
+                to="servicos" 
+                spy={true} 
+                smooth={true} 
+                offset={-80} 
+                duration={500} 
+                className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
+              >
+                Serviços
+              </Link>
+              <Link 
+                to="clientes" 
+                spy={true} 
+                smooth={true} 
+                offset={-80} 
+                duration={500} 
+                className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
+              >
+                Clientes
+              </Link>
+              <Link 
+                to="contato" 
+                spy={true} 
+                smooth={true} 
+                offset={-80} 
+                duration={500} 
+                className="font-inter text-black hover:text-lw-blue transition-colors cursor-pointer"
+              >
+                Contato
+              </Link>
+            </div>
             
             <a 
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-lw-green text-white font-poppins font-medium px-5 py-2 rounded-md hover:bg-lw-green/90 transition-colors"
+              className="bg-lw-green text-white font-poppins font-medium px-5 py-2 rounded-md hover:bg-lw-green/90 transition-colors block"
             >
               Solicitar Orçamento
             </a>

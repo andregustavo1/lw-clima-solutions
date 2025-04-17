@@ -1,4 +1,5 @@
 
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import {
   Carousel,
   CarouselContent,
@@ -28,7 +29,7 @@ const GallerySection = () => {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section id="galeria" className="py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div 
           className="text-center max-w-3xl mx-auto mb-16"
@@ -44,7 +45,7 @@ const GallerySection = () => {
         </div>
 
         <div 
-          className="max-w-5xl mx-auto"
+          className="max-w-5xl mx-auto relative"
           data-aos="fade-up"
           data-aos-delay="200"
           data-aos-duration="1000"
@@ -63,8 +64,12 @@ const GallerySection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious className="absolute left-0 top-1/2 -translate-y-1/2 z-10">
+              <ChevronLeft className="w-10 h-10 text-lw-blue hover:text-lw-blue/80 transition-colors" />
+            </CarouselPrevious>
+            <CarouselNext className="absolute right-0 top-1/2 -translate-y-1/2 z-10">
+              <ChevronRight className="w-10 h-10 text-lw-blue hover:text-lw-blue/80 transition-colors" />
+            </CarouselNext>
           </Carousel>
         </div>
       </div>
