@@ -74,9 +74,9 @@ const Header = () => {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-lw-green text-white font-poppins font-medium px-5 py-2 rounded-md hover:bg-lw-green/90 transition-colors block"
+              className="bg-lw-green text-white font-poppins font-medium px-5 py-2 rounded-md hover:bg-lw-green/90 transition-colors block md:inline-block"
             >
-              Solicitar Orçamento
+              Contate-nos
             </a>
           </nav>
         </div>

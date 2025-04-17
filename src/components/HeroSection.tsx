@@ -8,7 +8,7 @@ const HeroSection = () => {
     <section id="inicio" className="relative h-screen flex items-center">
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&q=80" 
+          src="/lovable-uploads/bd8dcd25-5ad9-4e8c-a278-bff7b060884e.png" 
           alt="Sistemas de climatização" 
           className="w-full h-full object-cover"
         />
